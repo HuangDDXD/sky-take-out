@@ -14,7 +14,7 @@
 
    3.2 Nginx反向代理的配置方法
 
-   ```xml
+   ```conf
    server {
        listen       80;
        server_name  localhost;
@@ -26,7 +26,7 @@
 
    3.3 Nginx负载均衡的配置方式
 
-   ```xml
+   ```conf
    upstream webservers{
      server 127.0.0.1:8080 weight=90 ;
      server 127.0.0.1:8088 weight=10 ;
