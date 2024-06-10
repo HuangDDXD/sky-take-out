@@ -85,4 +85,12 @@ public class CategoryController {
         categoryService.startOrStop(id, status);
         return Result.success();
     }
+
+    @DeleteMapping
+    @ApiOperation("根据id删除分类")
+    public Result deleteById(Long id) {
+        log.info("根据id删除分类: {}", id);
+        categoryService.deleteById(id);
+        return Result.success();
+    }
 }
