@@ -34,4 +34,9 @@ public interface CategoryService {
      * @return
      */
     List<Category> list(Integer type);
+
+    /**
+     * 启用，禁用分类
+     */
+    void startOrStop(Long id, Integer status);
 }

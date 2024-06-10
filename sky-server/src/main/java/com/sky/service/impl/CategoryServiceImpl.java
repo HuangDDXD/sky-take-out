@@ -77,4 +77,19 @@ public class CategoryServiceImpl implements CategoryService {
     public List<Category> list(Integer type) {
         return categoryMapper.list(type);
     }
+
+    /**
+     * 启用，禁用分类
+     * @param id
+     * @param status
+     */
+    public void startOrStop(Long id, Integer status) {
+        Category category = Category.builder()
+                .id(id)
+                .status(status)
+                .build();
+
+        System.out.println(category);
+        categoryMapper.update(category);
+    }
 }
