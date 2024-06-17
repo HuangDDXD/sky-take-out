@@ -6,3 +6,9 @@ sky:
     database: sky_take_out
     username: root
     password: Primary1314
+
+  alioss:
+    endpoint: oss-cn-guangzhou.aliyuncs.com
+    access-key-id: LTAI5t8XK821KLVUjbR3DFq7
+    access-key-secret: YIfuTYgIt1KBQWMWKZWv5mftrhrG6S
+    bucket-name: sky-dd-itcast
