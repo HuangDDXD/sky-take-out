@@ -71,7 +71,7 @@ public class DishController {
     @ApiOperation("菜品起售、停售")
     public Result startOrStop(Long id, @PathVariable Integer status) {
         log.info("菜品起售、停售: {} {}", id, status);
-
+        dishService.startOrStop(id, status);
         return Result.success();
     }
 
