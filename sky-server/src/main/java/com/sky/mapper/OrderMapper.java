@@ -42,4 +42,7 @@ public interface OrderMapper {
      * @param orders
      */
     void update(Orders orders);
+
+    @Select("select * from orders where number = #{orderNumber} and user_id= #{userId}")
+    Orders getByNumberAndUserId(String orderNumber, Long userId);
 }
